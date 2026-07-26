@@ -1,0 +1,120 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; overflow-x: hidden; padding-top: 80px; }
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(135deg, rgba(255,255,255,0.98), rgba(248,251,232,0.98));
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(27,94,32,0.12);
+  z-index: 1000;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(46,125,50,0.1);
+}
+
+header.scrolled {
+  box-shadow: 0 12px 40px rgba(27,94,32,0.15);
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 18px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  color: #0e6b23;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.02);
+}
+
+nav {
+  display: flex;
+  gap: 45px;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #424242;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  letter-spacing: 0.3px;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #0e6b23;
+  border-radius: 0;
+  transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+nav a:hover {
+  color: #1b5e20;
+  font-weight: 600;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a.active {
+  color: #0e6b23;
+  font-weight: 600;
+}
+
+nav a.active::after {
+  width: 100%;
+}
+
+footer {
+  background: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 30px 5%;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 1024px) {
+  body { padding-top: 75px; }
+  .header-content { gap: 30px; }
+  nav { gap: 30px; }
+  nav a { font-size: 0.9rem; }
+}
+
+@media (max-width: 768px) {
+  body { padding-top: 70px; }
+  .header-content { gap: 15px; padding: 12px 5%; flex-wrap: wrap; }
+  .logo { font-size: 1rem; letter-spacing: 0.5px; }
+  nav { gap: 12px; flex-wrap: wrap; justify-content: center; }
+  nav a { font-size: 0.8rem; padding: 6px 10px; }
+}
+
+@media (max-width: 480px) {
+  body { padding-top: 60px; }
+  .header-content { gap: 10px; padding: 10px 3%; flex-direction: column; }
+  .logo { font-size: 0.9rem; letter-spacing: 0; }
+  nav { gap: 8px; }
+  nav a { font-size: 0.75rem; padding: 5px 8px; }
+}
