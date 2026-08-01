@@ -1105,11 +1105,19 @@ footer {
 @media (max-width: 480px) {
   .page-hero { padding: 44px 5% 38px; }
   .hero-slider { min-height: 62vh; }
-  .hs-text h1 { font-size: 1.7rem; margin-bottom: 12px; }
-  .hs-text p { font-size: 0.85rem; margin-bottom: 16px; }
+  .hero-badge { margin-bottom: 14px; }
+  .hs-text h1 { font-size: 1.35rem; margin-bottom: 10px; }
+  .hs-text p { font-size: 0.78rem; margin-bottom: 14px; }
   .gallery-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
   .gallery-item img { height: 100px; }
-  .cta-buttons a { width: 100%; }
+  .cta-buttons { flex-wrap: nowrap; gap: 10px; }
+  .cta-buttons a { flex: 1 1 0; width: auto; padding: 13px 10px; font-size: 0.82rem; white-space: nowrap; }
+
+  .team-members-section { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .member-card { padding: 14px 12px; }
+  .member-card h4 { font-size: 0.88rem; }
+  .member-role { font-size: 0.6rem; margin-bottom: 6px; }
+  .member-card p { font-size: 0.74rem; }
 
   .features-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .feature-card { padding: 20px 14px; }
