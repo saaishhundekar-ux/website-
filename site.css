@@ -540,6 +540,16 @@ footer {
 .about-feature i { font-size: 1.2rem; color: var(--green-600); }
 .about-feature span { font-weight: 600; font-size: 0.9rem; color: var(--green-800); }
 
+.export-note {
+  margin-top: 16px;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.export-note i { color: var(--green-600); font-size: 0.85rem; }
+
 /* ===================================================================
    About page
    =================================================================== */
