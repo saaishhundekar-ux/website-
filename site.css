@@ -589,15 +589,6 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
   padding: 72px 5%;
-  display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 56px;
-  align-items: center;
-}
-.story-image img {
-  width: 100%;
-  border-radius: 22px;
-  box-shadow: var(--shadow-md);
 }
 .story-text h2 {
   font-size: clamp(1.6rem, 3.5vw, 2.2rem);
@@ -1006,9 +997,8 @@ footer {
    Responsive
    =================================================================== */
 @media (max-width: 1024px) {
-  .about-content, .story-section { grid-template-columns: 1fr; gap: 44px; }
+  .about-content { grid-template-columns: 1fr; gap: 44px; }
   .leadership-grid { grid-template-columns: 1fr; }
-  .story-image { max-width: 420px; margin: 0 auto; }
 }
 
 @media (max-width: 860px) {
