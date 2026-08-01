@@ -540,30 +540,47 @@ footer {
 .about-feature i { font-size: 1.2rem; color: var(--green-600); }
 .about-feature span { font-weight: 600; font-size: 0.9rem; color: var(--green-800); }
 
-.export-note {
-  margin-top: 18px;
+.export-strip {
+  padding: 40px 5%;
+  background: linear-gradient(135deg, var(--green-50), var(--green-100));
+}
+.export-strip-inner {
+  max-width: 1300px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 22px;
+}
+.export-strip-label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--green-800);
+  letter-spacing: 0.3px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.export-strip-label i { color: var(--green-600); font-size: 1.05rem; }
+.export-strip-items {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.export-strip-item {
+  background: #fff;
+  padding: 11px 24px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--green-800);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
   gap: 10px;
 }
-.export-label {
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--ink-soft);
-  display: flex;
-  align-items: center;
-  gap: 7px;
-}
-.export-label i { color: var(--green-600); font-size: 0.85rem; }
-.export-tag {
-  background: var(--green-100);
-  color: var(--green-800);
-  font-size: 0.8rem;
-  font-weight: 700;
-  padding: 5px 15px;
-  border-radius: 30px;
-}
+.export-strip-item i { color: var(--green-600); font-size: 1.1rem; }
 
 /* ===================================================================
    About page
