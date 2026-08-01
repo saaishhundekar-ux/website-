@@ -541,14 +541,29 @@ footer {
 .about-feature span { font-weight: 600; font-size: 0.9rem; color: var(--green-800); }
 
 .export-note {
-  margin-top: 16px;
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.export-label {
   font-size: 0.82rem;
+  font-weight: 600;
   color: var(--ink-soft);
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 7px;
 }
-.export-note i { color: var(--green-600); font-size: 0.85rem; }
+.export-label i { color: var(--green-600); font-size: 0.85rem; }
+.export-tag {
+  background: var(--green-100);
+  color: var(--green-800);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 5px 15px;
+  border-radius: 30px;
+}
 
 /* ===================================================================
    About page
