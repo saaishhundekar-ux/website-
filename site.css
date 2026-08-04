@@ -1052,14 +1052,15 @@ footer {
   nav {
     position: fixed;
     top: 0;
-    right: -290px;
-    width: 280px;
+    right: -240px;
+    width: 220px;
+    max-width: 65vw;
     height: 100vh;
     background: #ffffff;
     flex-direction: column;
     align-items: flex-start;
     gap: 6px;
-    padding: 90px 30px 30px;
+    padding: 90px 24px 30px;
     box-shadow: -12px 0 40px rgba(27,94,32,0.15);
     transition: right 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
@@ -1081,7 +1082,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .hero-slider { min-height: 68vh; padding: 60px 5% 70px; }
+  .hero-slider { min-height: calc(100vh - 72px); padding: 60px 5% 70px; }
   .hero-buttons { gap: 10px; flex-wrap: nowrap; }
   .hero-buttons a { flex: 1 1 0; padding: 12px 10px; font-size: 0.85rem; white-space: nowrap; }
   .hs-arrow { width: 38px; height: 38px; font-size: 0.85rem; }
@@ -1104,7 +1105,7 @@ footer {
 
 @media (max-width: 480px) {
   .page-hero { padding: 44px 5% 38px; }
-  .hero-slider { min-height: 62vh; }
+  .hero-slider { min-height: calc(100vh - 72px); }
   .hero-badge { margin-bottom: 14px; }
   .hs-text h1 { font-size: 1.35rem; margin-bottom: 10px; }
   .hs-text p { font-size: 0.78rem; margin-bottom: 14px; }
