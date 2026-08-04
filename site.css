@@ -1067,7 +1067,7 @@ footer {
   nav a { font-size: 1rem; padding: 11px 0; width: 100%; }
   nav a::after { display: none; }
   nav a.active { color: var(--green-700); }
-  .nav-cta { text-align: center; justify-content: center; margin-top: 12px; display: inline-flex; }
+  .nav-cta { width: fit-content; text-align: center; justify-content: center; margin-top: 12px; padding: 8px 20px !important; font-size: 0.85rem !important; display: inline-flex; }
   .nav-backdrop {
     display: none;
     position: fixed;
@@ -1082,8 +1082,8 @@ footer {
 
 @media (max-width: 768px) {
   .hero-slider { min-height: 68vh; padding: 60px 5% 70px; }
-  .hero-buttons { gap: 10px; }
-  .hero-buttons a { flex: 1 1 auto; }
+  .hero-buttons { gap: 10px; flex-wrap: nowrap; }
+  .hero-buttons a { flex: 1 1 0; padding: 12px 10px; font-size: 0.85rem; white-space: nowrap; }
   .hs-arrow { width: 38px; height: 38px; font-size: 0.85rem; }
   .hs-prev { left: 10px; }
   .hs-next { right: 10px; }
@@ -1134,4 +1134,16 @@ footer {
   .leader-info .exp { font-size: 0.6rem; padding: 2px 8px; margin-bottom: 6px; }
   .leader-info p { font-size: 0.74rem; margin-bottom: 8px; }
   .expertise span { font-size: 0.62rem; padding: 3px 8px; }
+
+  .services-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .service-card { padding: 20px 12px; }
+  .service-icon { width: 48px; height: 48px; margin-bottom: 12px; }
+  .service-icon i { font-size: 1.3rem; }
+  .service-card h3 { font-size: 0.95rem; margin-bottom: 6px; }
+  .service-card p { font-size: 0.76rem; }
+
+  .process-timeline { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .timeline-icon { width: 50px; height: 50px; margin-bottom: 10px; font-size: 1.15rem; }
+  .timeline-item h4 { font-size: 0.92rem; margin-bottom: 5px; }
+  .timeline-item p { font-size: 0.76rem; }
 }
